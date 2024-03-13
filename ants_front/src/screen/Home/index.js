@@ -37,7 +37,30 @@ export function SubHome() {
 
     return (
         <div>
-            Ants Front Tamplete{lotGridRows}
+            <header>
+                <h2>
+            GND KOREA{lotGridRows}
+                </h2>
+            </header>
+            <main></main>
+            <section style={{backgroundColor:'#fff',display:'flex',width:'90%'}}>소프트웨어 이슈등록
+            <table>
+                <thead>
+                    <th>작성자</th> <th>내용</th> <th>일시</th> <th>-</th>
+                </thead>
+                <tr>
+                    <td>내용</td><td>내용</td><td>내용</td><td>내용</td>
+                </tr>
+                <tr>
+                    <td>일시</td><td>내용</td><td>내용</td><td>내용</td>
+                </tr>
+                <tr>
+                    <td>-</td><td>내용</td><td>내용</td><td>내용</td>
+                </tr>
+            </table>
+            </section>
+                
+            
         </div>
     )
 }

@@ -1,0 +1,14 @@
+{
+  "name": "appservice",
+  "version": "1.0.0",
+  "description": "antswebtemplate",
+  "main": "execute",
+  "scripts": {
+    "test": "execute dev"
+  },
+  "author": "antsnest",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.11.3"
+  }
+}

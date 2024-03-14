@@ -59,9 +59,9 @@ export function SubHome() {
                 </h2>
             </header>
             <main>
-                {item_sample.map((item,idx)=>{
-                        (<>{(item.converted_title).toString('utf8_general_ci')}</>)
-                })}
+                {item_sample.map((item,idx)=>
+                        (<label>{item.title}</label>)
+                )}
             </main>
             <section style={{backgroundColor:'#fff',display:'flex',width:'90%'}}>소프트웨어 이슈등록
             <table>

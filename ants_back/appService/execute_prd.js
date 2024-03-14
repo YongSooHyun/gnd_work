@@ -24,6 +24,7 @@ const app = express(); // Default route for server status
 
 var whitelist = [
     'http://localhost',
+    'http://localhost:3000',
     ]
     var corsOptions = {
         origin: function (origin, callback, req) {

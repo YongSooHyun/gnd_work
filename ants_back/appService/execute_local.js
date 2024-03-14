@@ -16,6 +16,7 @@ const app = express(); // Default route for server status
 
 var whitelist = [
     'http://localhost',
+    'http://localhost:3000'
     ]
     var corsOptions = {
         origin: function (origin, callback, req) {
@@ -50,7 +51,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //스테틱 폴더 경로설정
-app.use('/', request);
+app.use('/api', request);
 app.use(express.static(path.resolve(__dirname, "../build")));
 console.log(path.resolve(__dirname + '/../static'));
 app.use('/app', express.static(path.resolve(__dirname + '/../static')));

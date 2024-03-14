@@ -67,8 +67,8 @@ app.get("/", (req, res) => {
         res.end(data);
     });
 });
-app.listen(DEV_PORT 
-    , () => {
-   console.log('Server is running on port '+DEV_PORT);
-  });
+// app.listen(DEV_PORT 
+//     , () => {
+//    console.log('Server is running on port '+DEV_PORT);
+//   });
   module.exports =app;

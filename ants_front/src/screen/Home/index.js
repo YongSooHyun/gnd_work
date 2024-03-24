@@ -38,7 +38,7 @@ export default function Home() {
 
 export function SubHome() {
     const { lotGridRows, setLotGridRows } = useContext(HomeContext); //모듈 전역 컨텍스트
-    const [item_sample, setItem_sample] = useState([{}]);
+    const [get_Item_sample, setItem_sample] = useState([{}]);
     useEffect(()=>{
         //reqGet('api/getTest',{},(result)=>{ setItem_sample(result) });
         getItemSample();
@@ -49,7 +49,7 @@ export function SubHome() {
         .then((msg) => setItem_sample(msg))
         .catch(err => alert('Error' + err));
     }
-    useEffect(()=>{}, [item_sample]);
+    useEffect(()=>{}, [get_Item_sample]);
 
     return (
         <div>
@@ -59,8 +59,8 @@ export function SubHome() {
                 </h2>
             </header>
             <main>
-                {item_sample.map((item,idx)=>
-                        (<label>{item.title}</label>)
+                {get_Item_sample.map((item,idx)=>
+                        (<p>{idx}.{item.title}</p>)
                 )}
             </main>
             <section style={{backgroundColor:'#fff',display:'flex',width:'90%'}}>소프트웨어 이슈등록

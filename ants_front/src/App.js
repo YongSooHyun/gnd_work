@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './screen/Home';
 import { HomeContext,HomeProvider } from './screen/Home/HomeContext';
 import React from 'react';
+import Sample from './screen/Sample'
 
 
 function App() {
@@ -15,7 +16,11 @@ function App() {
         <Route exact path="/" element={
         <HomeProvider>
           <Home />
-          </HomeProvider>} key="Home" />
+          </HomeProvider>
+        } key="Home" />
+
+        <Route exact path="/Sample" element={<Sample/>}/>
+          
       </Routes>
     </div>
   );
